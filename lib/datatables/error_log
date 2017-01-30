@@ -1,0 +1,1 @@
+[30-Jul-2014 03:35:43 Australia/Melbourne] PHP Warning:  mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/noosites/public_html/operatorlibrary/lib/datatables/server_side.php on line 31

@@ -1,0 +1,261 @@
+::selection {
+  background: #3ee4c4;
+}
+
+::-moz-selection {
+  background: #3ee4c4;
+}
+
+.btn-primary {
+  background-color: #1abc9c;
+  border-color: #1abc9c !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus {
+  color: #fff;
+  background-color: #1bc5a3;
+}
+
+a,
+a:focus,
+a:hover,
+.page-title a:hover,
+.nav-menu > li:hover > a,
+.nav-menu a:hover, .nav-menu a:focus,
+.nav-menu a.active,
+.search-closer:hover,
+.user-account .dropdown-menu li > a:hover,
+.user-account .dropdown-menu li > a.active,
+.quick-links li a:hover,
+.offcanvas-show .navbar-toggle,
+.site-footer h4,
+.site-footer h5,
+.site-footer h6,
+.footer-links a:hover,
+.footer-links a:focus,
+.footer-links a:active,
+.copyright-text a:hover,
+.copyright-text a:focus,
+.copyright-text a:active,
+.btn-outline.btn-primary,
+.bootstrap-select .dropdown-menu li > a:hover,
+.bootstrap-select .dropdown-menu li > a:focus,
+.faq-items h4,
+.faq-items h5,
+.card-footer a:hover,
+.shot-info a:hover,
+.shot-by-widget .username:hover,
+.comment-pagination a:hover,
+.features .icon,
+.page-links .link-list a.active,
+.page-links .link-list a:hover {
+  color: #1abc9c;
+}
+
+.group-title::before,
+.section-header h2::after,
+.section-header h3::after,
+.btn-navbar:hover,
+#scroll-up,
+.shot-preview .label,
+.sidebar-block h6::after,
+.lSSlideOuter .lSPager.lSpg > li.active a,
+.lSSlideOuter .lSPager.lSpg > li:hover a,
+.profile-head .tab-list li::after,
+.social-icons a:hover,
+.social-icons a:focus,
+.social-icons a:active,
+.pagination > li > a:hover,
+.pagination > li > a:focus,
+.pagination > li > span:hover,
+.pagination > li > span:focus,
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus,
+.pager li > a:hover,
+.pager li > a:focus,
+.pager li > span:hover,
+.pager li > span:focus,
+.spinner > span,
+.page-links .link-list a::before {
+  background-color: #1abc9c;
+}
+
+.bootstrap-select .btn:hover,
+.bootstrap-select .btn:focus,
+.bootstrap-select.btn-group.open .dropdown-toggle,
+.tag-list a:hover,
+.comment-form .form-control:focus {
+  border-color: #1abc9c;
+}
+
+.nav-menu ul,
+.user-account .dropdown-menu {
+  border-top-color: #1abc9c;
+}
+
+.shot-by-widget .user-stats a:hover {
+  border-bottom-color: #1abc9c;
+}
+
+/*CUSTOM*/
+
+.breadcrumb {background: rgba(255, 255, 255, 0); border: 0px solid rgba(255, 255, 255, 0); border-radius: 4px; display: block;}
+.breadcrumb li {font-size: 16px;}
+.breadcrumb a {color: rgba(31, 180, 194, 1);}
+.breadcrumb a:hover {color: rgba(67, 150, 42, 1);}
+.breadcrumb>.active {color: rgba(153, 153, 153, 1);}
+.breadcrumb>li+li:before {color: rgba(204, 204, 204, 1); content: "\00bb\00a0";}
+
+.media-header {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+    z-index: -1;
+}
+
+/* GLOBALS */
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background: transparent; 
+}
+
+::-moz-selection {
+    background: transparent; 
+}
+
+.wrapper-demo {
+    margin: 18px 0 0 0;
+    *zoom: 1;
+    font-weight: 400;
+}
+
+.wrapper-demo:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* DEMO 5 */
+
+.wrapper-dropdown-5 {
+    /* Size & position */
+    position: relative;
+    padding: 12px 15px;
+    /* Styles */
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    z-index: 10;
+}
+
+.wrapper-dropdown-5:after { /* Little arrow */
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #4cbeff transparent;
+}
+
+.wrapper-dropdown-5 .dropdown {
+    /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    /* Styles */
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top: none;
+    border-bottom: none;
+    list-style: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+    /* Hiding */
+    max-height: 0;
+    overflow: hidden;
+}
+
+.wrapper-dropdown-5 .dropdown li {
+    padding: 0 10px ;
+}
+
+.wrapper-dropdown-5 .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+    transition: all 0.3s ease-out;
+    border-bottom: 1px solid #e6e8ea;
+}
+
+.wrapper-dropdown-5 .dropdown li:last-of-type a {
+    border: none;
+}
+
+.wrapper-dropdown-5 .dropdown li i {
+    margin-right: 5px;
+    color: inherit;
+    vertical-align: middle;
+}
+
+/* Hover state */
+
+.wrapper-dropdown-5 .dropdown li:hover a {
+    color: #57a9d9;
+}
+
+/* Active state */
+
+.wrapper-dropdown-5.active {
+    border-radius: 5px 5px 0 0;
+    background: #1abc9c;
+    box-shadow: none;
+    border-bottom: none;
+    color: white;
+}
+
+.wrapper-dropdown-5.active:after {
+    border-color: #82d1ff transparent;
+}
+
+.wrapper-dropdown-5.active .dropdown {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    max-height: 400px;
+}
+
+/* No CSS3 support: none */
+

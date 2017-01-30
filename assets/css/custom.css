@@ -1,0 +1,28 @@
+.shot-preview .shot-download {
+		display: none;
+		position: absolute;
+		top: 25%;
+		left: 23%;
+		text-align:center;
+		opacity: 0.8;
+    	filter: alpha(opacity=80);
+		z-index: 10000;
+}
+
+.shot-preview .shot-view {
+	    display: none;
+		position: absolute;
+		top: 45%;
+		left: 33%;
+		text-align:center;
+		opacity: 0.8;
+    	filter: alpha(opacity=80);
+		z-index: 10000;
+}
+
+.shot:hover .shot-download{
+	display: inline;
+}
+.shot:hover .shot-view{
+	display: inline;
+}
