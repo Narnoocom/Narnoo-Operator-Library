@@ -401,9 +401,9 @@ $config['narnoo_api_cache'] = TRUE;
 |
 */
 $config['narnooapi'] = array(
-	"API-KEY: 14617323103239",
-	"API-SECRET-KEY: d3611a13076dad2e0327923f4ef26280af48cb96",
-  "Authorization: Nq5tquFjayaBMpdhMoRAjsBCydhrH0y6m6ywASy3"
+	"API-KEY: xxxxxxxxxxxx",
+	"API-SECRET-KEY: xxxxxxxxxxxx",
+  "Authorization: xxxxxxxxxxxx"
 );
 
 
