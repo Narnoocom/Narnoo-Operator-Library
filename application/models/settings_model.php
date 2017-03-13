@@ -16,7 +16,7 @@ class settings_model extends CI_Model {
 
         $query = $this
                 ->db
-                ->select('settings.disclaimer,settings.editDate,members.contact')
+                ->select('settings.welcome,settings.disclaimer,settings.editDate,members.contact')
                 ->from('settings')
                 ->join('members','members.id = settings.members_id')
                 ->limit(1)

@@ -1,6 +1,6 @@
   <div class="page-links background-header-page" style="background-image: url(<?=$image->operator_image->large_image_path;?>)" >
       <div class="container">
-        <header class="section-header">
+        <header class="section-header" style="color:#fff;text-shadow: 1px 1px #000000;">
             <?php if(!empty($image->operator_image->image_caption)){ ?>
                   <h3 style="color:#fff"><?php echo $image->operator_image->image_caption; ?></h3>
                 <?php }else{ ?>

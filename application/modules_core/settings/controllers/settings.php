@@ -25,6 +25,13 @@ class Settings extends MX_Controller {
         $this->template->load('main_tpl', 'admin/settings_openpage_tpl', $details);
     }
 
+    public function login_message() {
+        $this->load->helper('time');
+        $details['info'] = $this->settings_model->getTerms();
+
+        $this->template->load('main_tpl', 'admin/settings_public_tpl', $details);
+    }
+
     public function about() {
 
         //check cache first = account
@@ -51,6 +58,24 @@ class Settings extends MX_Controller {
             'disclaimer' => $text,
             'members_id' => $this->userId,
             'editDate' => $date
+        );
+
+        $this->settings_model->saveDisclaimer($data);
+    }
+
+    public function do_save_message() {
+        $this->authenticate->authen_ajax($this->input->is_ajax_request());
+        $this->load->helper('date');
+        $text = $this->input->post('t');
+        $datestring = "%Y-%m-%d %h:%i";
+        $time = time();
+
+        $date = mdate($datestring, $time);
+
+        $data = array(
+            'welcome'     => $text,
+            'members_id'  => $this->userId,
+            'editDate'    => $date
         );
 
         $this->settings_model->saveDisclaimer($data);

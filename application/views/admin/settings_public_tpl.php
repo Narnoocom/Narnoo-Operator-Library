@@ -11,18 +11,22 @@
 </div>
 <div class='row-fluid'>
     <div class='w-box-header'>
-        <h3>Edit Your Member Disclaimer Message</h3>
+        <h3>Edit Your Login Message</h3>
     </div>
     <form>
         <div class='w-box-content cnt_a'>
 
             <div class='span12'></div>
 
-            <textarea name="wysiwg_full" id="wysiwg_full" cols="30" rows="10"><?= $info->disclaimer; ?></textarea>
+            <textarea name="wysiwg_full" id="wysiwg_full" cols="30" rows="10"><?
+            if(!empty($info->welcome)){
+              echo $info->welcome;
+            }
+            ?></textarea>
 
             <div class='row-fluid'>
                 <div class='span12'>
-                    <buttom class="btn btn-primary" style="margin-top: 10px" onclick="saveDisclaimer()">Update Disclaimer</buttom>
+                    <buttom class="btn btn-primary" style="margin-top: 10px" id="welcomeMessage">Update Message</buttom>
                 </div>
             </div>
     </form>
@@ -67,16 +71,20 @@
     });
 
     //save disclaimer
-    function saveDisclaimer(){
+    $('#welcomeMessage').click(function(e){
 
-        val = $('textarea#wysiwg_full').val();
-        if(val !== ''){
+      e.preventDefault();
+      val = $('textarea#wysiwg_full').val();
+      if(val !== ''){
 
-            $.post('<?= site_url('/settings/saveDisclaimer/') ?>',{ t:val })
-            .done(function( data ) {
-                location.reload();
-            });
-        }
+          $.post('<?= site_url('/settings/do_save_message/') ?>',{ t:val })
+          .done(function( data ) {
+              location.reload();
+
+          });
     }
+
+    });
+
 
 </script>

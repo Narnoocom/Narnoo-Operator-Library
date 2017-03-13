@@ -100,6 +100,7 @@
                 <div class="accordion-inner">
                     <ul class="nav nav-list">
                         <li class="nav-header">Public Pages</li>
+                        <li><a href="<?= site_url('/settings/login_message/') ?>">Login Message</a></li>
                         <li><a href="<?= site_url('/settings/message/') ?>">Opening Message</a></li>
                         <li><a href="<?= site_url('/settings/menu/') ?>">User Menu Options</a></li>
                         <li class="nav-header">Library Information Page</li>
